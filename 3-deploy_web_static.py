@@ -8,7 +8,7 @@ env.hosts = ["54.167.24.215", "54.82.159.235"]
 
 
 def do_pack():
-    """ A script that generates archive the contents of web_static folder"""
+    """ fucntion generates the archive"""
 
     filename = strftime("%Y%m%d%H%M%S")
     try:
@@ -23,8 +23,8 @@ def do_pack():
 
 
 def do_deploy(archive_path):
-    """Fabric script that distributes
-    an archive to your web server"""
+    """to distribute the archives
+    """
 
     if not path.exists(archive_path):
         return False

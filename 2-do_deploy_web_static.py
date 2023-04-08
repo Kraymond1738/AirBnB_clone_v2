@@ -7,8 +7,8 @@ env.hosts = ["54.167.24.215", "54.82.159.235"]
 
 
 def do_deploy(archive_path):
-    """Fabric script that distributes
-    an archive to your web server"""
+    """distribute the 
+    archive to all the web server"""
 
     if not path.exists(archive_path):
         return False
